@@ -1,0 +1,80 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+main{
+    
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+
+    
+}
+video{
+    border:8px solid #f1f1f1;
+    border-radius: 8px;
+
+    
+    
+}
+.video-div{
+    padding: 0 8px;
+}
+.gradient-background {
+    background: linear-gradient(92deg,#f2903b,#f2903b,#73f16d);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .bottom-bar{
+    height: max-content;
+    width: 100%;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 14px;
+  }
+  .image-flower{
+    height: 90px;
+  }
+  .text{
+    display: flex;
+    font-size: 12px;
+    color: #653204;
+    
+  }
+  @media screen and (min-width: 576px) {
+    .text {
+        font-size: 20px;
+        line-height: 36px;
+    }
+video{
+    border:12px solid #f1f1f1;
+
+}
+.video-div{
+    padding: 0 16px;
+}
+  }
+
+  h1{
+    margin-top: 1rem ;
+    color: white;
+    font-size: 32px;
+  }
+ 
